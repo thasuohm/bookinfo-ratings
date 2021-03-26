@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: bookinfo-dev-ratings
-  namespace: student37-bookinfo-dev
+  namespace: student37-bookinfo-prd
   labels:
     app: bookinfo-dev-ratings
 spec:
@@ -35,6 +35,8 @@ spec:
             scheme: HTTP
         env:
         - name: SERVICE_VERSION
-          value: v1
+          value: v2
+        - name: MONGO_DB_URL
+          value: mongodb://bookinfo-dev-ratings-mongodb:27017/ratings
       imagePullSecrets:
       - name: registry-bookinfo
