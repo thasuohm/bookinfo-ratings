@@ -4,7 +4,7 @@ metadata:
   name: bookinfo-prd-ratings
   namespace: student37-bookinfo-prd
   labels:
-    app: bookinfo-dev-ratings
+    app: bookinfo-prd-ratings
 spec:
   replicas: 1
   selector:
