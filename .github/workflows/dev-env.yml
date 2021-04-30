@@ -53,7 +53,7 @@ jobs:
       - name: curl
         uses: wei/curl@master
         with: 
-          args: http://bookinfo.dev.opsta.net/student37/ratings/health
+          args: http://bookinfo.dev.opsta.net/student37/ratings/health | grep "Ratings is Working"
           
 
       
