@@ -52,7 +52,8 @@ jobs:
     steps:
       - name: curl
         uses: wei/curl@master
-        with: http://bookinfo.dev.opsta.net/student37/ratings/health
+        with: 
+          args: http://bookinfo.dev.opsta.net/student37/ratings/health
           
 
       
