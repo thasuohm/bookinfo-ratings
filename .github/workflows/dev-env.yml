@@ -52,7 +52,7 @@ jobs:
     steps:
       - name: curl
         uses: enflo/curl-action@v2
-        with: "http://bookinfo.dev.opsta.net/student37/ratings/health"
+        with: http://bookinfo.dev.opsta.net/student37/ratings/health
           
 
       
