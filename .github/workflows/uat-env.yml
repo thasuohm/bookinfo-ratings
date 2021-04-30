@@ -19,7 +19,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ghcr.io/thasuohm/bookinfo-ratings:master
+          tags: ghcr.io/thasuohm/bookinfo-ratings:uat
   deploy:
     needs: build
     runs-on: ubuntu-20.04
@@ -52,6 +52,6 @@ jobs:
     steps:
       - name: acceptance-test
         run: curl http://bookinfo.uat.opsta.net/student37/ratings/health | grep "Ratings is Working"
-          
+   
 
       
